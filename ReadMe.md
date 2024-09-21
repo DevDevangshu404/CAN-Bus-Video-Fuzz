@@ -1,5 +1,14 @@
 # Devangshu Mazumder - 2685040 - MSc Cyber Security Project
-# CAN Fuzzing Tool with Computer Vision and Video Detection
+# **A New Frontier in Fuzzing: Real-Time Video Detection for CAN Bus Networks**
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+ __     _____ ____  _____ ___    __  __  ___ _____ ___ ___  _   _     ____    _    _   _    _____ _   _ _____________ _   _  ____ 
+ \ \   / /_ _|  _ \| ____/ _ \  |  \/  |/ _ \_   _|_ _/ _ \| \ | |   / ___|  / \  | \ | |  |  ___| | | |__  /__  /_ _| \ | |/ ___|
+  \ \ / / | || | | |  _|| | | | | |\/| | | | || |  | | | | |  \| |  | |     / _ \ |  \| |  | |_  | | | | / /  / / | ||  \| | |  _ 
+   \ V /  | || |_| | |__| |_| | | |  | | |_| || |  | | |_| | |\  |  | |___ / ___ \| |\  |  |  _| | |_| |/ /_ / /_ | || |\  | |_| |
+    \_/  |___|____/|_____\___/  |_|  |_|\___/ |_| |___\___/|_| \_|   \____/_/   \_\_| \_|  |_|    \___//____/____|___|_| \_|\____|
+    
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 This project is a CAN (Controller Area Network) fuzzing tool that integrates video detection to identify vulnerabilities in automotive or industrial systems. The tool uses a GUI built with `Tkinter`, CAN communication via the `python-can` library, and video processing with `OpenCV`.
 
@@ -13,7 +22,7 @@ This project is a CAN (Controller Area Network) fuzzing tool that integrates vid
 
 - **GUI Interface:** A user-friendly interface allows you to start and monitor fuzzing, view the real-time video feed, and review logs of sent CAN messages and detected changes.
 
-## Installation
+## Installation(Linux)
 Install Python and PIP:
 sudo apt install python3 python3-pip -y
 
@@ -38,7 +47,7 @@ Select Fuzzing Type:
  Full Fuzzing: Press 1                                                           Fuzz the entire range of CAN IDs.
  Quick Fuzzing: Press 2                                                          Similar to full fuzzing but with shorter delays for faster operation.
  Ranged Fuzzing: Press 3 and Specify a start and end CAN ID in hex eg: 0x280     This is processed within the full fuzzing logic.
-   Specify CAN IDs:                                                              Enter the range of CAN IDs to fuzz and any IDs to ignore.
+     Specify CAN IDs:                                                            Enter the range of CAN IDs to fuzz and any IDs to ignore.
      Video Recording: yes/no                                                     Choose whether to record video clips when visual changes are detected.
      Monitor GUI:                                                                The GUI will display the video feed, logs of sent CAN messages, and detected changes.
 
