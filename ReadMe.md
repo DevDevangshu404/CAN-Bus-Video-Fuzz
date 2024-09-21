@@ -43,7 +43,7 @@ sudo ip link set can0 up type can bitrate 500000
 
 ```bash
 sudo pip3 install -r requirements.txt
-
+```
 
 ### Running the tool
 
