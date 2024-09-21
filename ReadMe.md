@@ -63,3 +63,22 @@ The video camera might need some physical adjustments for optimal detection. Ens
 
 ### Threshold and Min Area Settings:
 The best threshold and minimum area values found for detecting significant changes are `30` and `230` respectively. These values can be adjusted in the code if needed to suit different environments.
+
+## Reverse Engineered CAN Messages
+
+| **CAN ID**  | **Data Position**      | **Effect Identified with Video Detection**                                                                              |
+|-------------|------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **0x050**   | Byte 0, Byte 1          | Triggers both the seatbelt warning and power steering warning. Generates new traffic from CAN IDs 0x320 and 0x62F.     |
+| **0x1A0**   | Byte 1, Bits 0, 1       | Activates the Electronic Stability Control (ESC) warning when Bit 1 is set to 1, and deactivates ABS warning with Bit 0. |
+| **0x280**   | Byte 3                  | Adjusts the **tachometer gauge (RPM)** based on the value between 0h and 60h.                                           |
+| **0x343**   | Byte 2                  | Activates the tire pressure monitoring warning when set to **FF**.                                                      |
+| **0x361**   | Entire Message          | Generates new traffic from CAN ID 0x625.                                                                                |
+| **0x373**   | Entire Message          | Activates the power steering warning light and causes unexpected behavior on the display below the mileage indicator.    |
+| **0x3D0**   | Byte 1                  | Controls the power steering warning light (Bit 1 for amber light, remaining for red light).                              |
+| **0x470**   | Byte 0, Byte 1          | Byte 0: Triggers car battery warning. Byte 1: Wakes up open door alarm. Controls additional alarms for boot and exterior lights. |
+| **0x531**   | Byte 0, Byte 1, Byte 2  | Byte 0: Controls main beam caution lamp, rear fog caution lamp. Byte 2: Activates additional indicators.                 |
+| **0x540**   | Byte 0                  | Displays the **"P R N D 4 3 2" sequence** on the center screen, related to gearbox indication.                          |
+| **0x5C0**   | Byte 5, Byte 6          | Byte 5: Controls brake pedal illumination. Byte 6: Controls electronic parking brake illumination.                      |
+| **0x5D0**   | Byte 0                  | Causes abnormality in mileage reading.                                                                                  |
+
+
