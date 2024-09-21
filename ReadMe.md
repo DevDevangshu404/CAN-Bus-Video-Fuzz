@@ -14,41 +14,42 @@ This project is a CAN (Controller Area Network) fuzzing tool that integrates vid
 - **GUI Interface:** A user-friendly interface allows you to start and monitor fuzzing, view the real-time video feed, and review logs of sent CAN messages and detected changes.
 
 ## Installation(Linux)
-Install Python and PIP:
-```
-bash
+
+1.Install Python and PIP:
+
+```bash
 sudo apt install python3 python3-pip -y
 ```
-Install Tkinter for GUI:
-```
-bash
+
+2.Install Tkinter for GUI:
+
+```bash
 sudo apt install python3-tk -y
 ```
-Install CAN Utilities and SocketCAN Support
-```
-bash
+
+3.Install CAN Utilities and SocketCAN Support
+
+```bash
 sudo apt install can-utils -y
 ```
 
-Setup Canbus Interface
-```
-bash
+4.Setup Canbus Interface
+
+```bash
 sudo ip link set can0 up type can bitrate 500000
 ```
-bash
-```
 
-or Similarly the command to install the required Python packages
-```
-bash
+5. or Similarly the command to install the required Python packages
+
+```bash
 sudo pip3 install -r requirements.txt
-```
+
 
 ### Running the tool
-```
-bash
+
+```bash
 python3 GUI_Fuzz.py
-```
+
 
 ### After Running the script
 Select Fuzzing Type:
