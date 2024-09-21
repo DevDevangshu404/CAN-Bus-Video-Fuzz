@@ -1,15 +1,6 @@
 # Devangshu Mazumder - 2685040 - MSc Cyber Security Project
 # **A New Frontier in Fuzzing: Real-Time Video Detection for CAN Bus Networks**
 
--------------------------------------------------------------------------------------------------------------------------------------------
- __     _____ ____  _____ ___    __  __  ___ _____ ___ ___  _   _     ____    _    _   _    _____ _   _ _____________ _   _  ____ 
- \ \   / /_ _|  _ \| ____/ _ \  |  \/  |/ _ \_   _|_ _/ _ \| \ | |   / ___|  / \  | \ | |  |  ___| | | |__  /__  /_ _| \ | |/ ___|
-  \ \ / / | || | | |  _|| | | | | |\/| | | | || |  | | | | |  \| |  | |     / _ \ |  \| |  | |_  | | | | / /  / / | ||  \| | |  _ 
-   \ V /  | || |_| | |__| |_| | | |  | | |_| || |  | | |_| | |\  |  | |___ / ___ \| |\  |  |  _| | |_| |/ /_ / /_ | || |\  | |_| |
-    \_/  |___|____/|_____\___/  |_|  |_|\___/ |_| |___\___/|_| \_|   \____/_/   \_\_| \_|  |_|    \___//____/____|___|_| \_|\____|
-    
--------------------------------------------------------------------------------------------------------------------------------------------
-
 This project is a CAN (Controller Area Network) fuzzing tool that integrates video detection to identify vulnerabilities in automotive or industrial systems. The tool uses a GUI built with `Tkinter`, CAN communication via the `python-can` library, and video processing with `OpenCV`.
 
 ## Features
