@@ -52,13 +52,13 @@ python3 GUI_Fuzz.py
 ```
 
 ### After Running the script
--- Select Fuzzing Type:
+- Select Fuzzing Type:
 -- Full Fuzzing: Press 1 (Fuzz the entire range of CAN IDs.)
 -- Quick Fuzzing: Press 2 (Similar to full fuzzing but with shorter delays for faster operation.)
 -- Ranged Fuzzing: Press 3 and Specify a start and end CAN ID in hex eg: 0x280 (This is processed within the full fuzzing logic.)
--- Enter the range of CAN IDs to fuzz and any IDs to ignore: (Can Press Enter if you do not want to ignore)
--- Video Recording: yes/no (Choose whether to record video clips when visual changes are detected)
--- Monitor GUI: The GUI will display the video feed, logs of sent CAN messages, and detected changes.
+- Enter the range of CAN IDs to fuzz and any IDs to ignore: (Can Press Enter if you do not want to ignore)
+- Video Recording: yes/no (Choose whether to record video clips when visual changes are detected)
+- Monitor GUI: The GUI will display the video feed, logs of sent CAN messages, and detected changes.
 
 ### Prerequisites
 
