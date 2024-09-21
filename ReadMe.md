@@ -49,7 +49,7 @@ sudo pip3 install -r requirements.txt
 
 ```bash
 python3 GUI_Fuzz.py
-
+```
 
 ### After Running the script
 Select Fuzzing Type:
