@@ -15,32 +15,49 @@ This project is a CAN (Controller Area Network) fuzzing tool that integrates vid
 
 ## Installation(Linux)
 Install Python and PIP:
+```
+bash
 sudo apt install python3 python3-pip -y
-
+```
 Install Tkinter for GUI:
+```
+bash
 sudo apt install python3-tk -y
-
+```
 Install CAN Utilities and SocketCAN Support
+```
+bash
 sudo apt install can-utils -y
+```
 
 Setup Canbus Interface
+```
+bash
 sudo ip link set can0 up type can bitrate 500000
+```
+bash
+```
 
 or Similarly the command to install the required Python packages
+```
+bash
 sudo pip3 install -r requirements.txt
+```
 
 ### Running the tool
+```
+bash
 python3 GUI_Fuzz.py
-
+```
 
 ### After Running the script
 Select Fuzzing Type:
- Full Fuzzing: Press 1                                                           Fuzz the entire range of CAN IDs.
- Quick Fuzzing: Press 2                                                          Similar to full fuzzing but with shorter delays for faster operation.
- Ranged Fuzzing: Press 3 and Specify a start and end CAN ID in hex eg: 0x280     This is processed within the full fuzzing logic.
-     Specify CAN IDs:                                                            Enter the range of CAN IDs to fuzz and any IDs to ignore.
-     Video Recording: yes/no                                                     Choose whether to record video clips when visual changes are detected.
-     Monitor GUI:                                                                The GUI will display the video feed, logs of sent CAN messages, and detected changes.
+Full Fuzzing: Press 1 (Fuzz the entire range of CAN IDs.)
+Quick Fuzzing: Press 2 (Similar to full fuzzing but with shorter delays for faster operation.)
+Ranged Fuzzing: Press 3 and Specify a start and end CAN ID in hex eg: 0x280 (This is processed within the full fuzzing logic.)
+Enter the range of CAN IDs to fuzz and any IDs to ignore: (Can Press Enter if you do not want to ignore)
+Video Recording: yes/no (Choose whether to record video clips when visual changes are detected)
+Monitor GUI: The GUI will display the video feed, logs of sent CAN messages, and detected changes.
 
 ### Prerequisites
 
