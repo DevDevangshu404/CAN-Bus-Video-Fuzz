@@ -3,6 +3,8 @@
 
 This project is a CAN (Controller Area Network) fuzzing tool that integrates video detection to identify vulnerabilities in automotive or industrial systems. The tool uses a GUI built with `Tkinter`, CAN communication via the `python-can` library, and video processing with `OpenCV`.
 
+### Check more about it on my website: https://www.devangshumazumder.com/projects/content/videofuzz/fuzzing 
+
 ## Features
 
 - **CAN Fuzzing:** Perform full-range or quick fuzzing on CAN IDs with the ability to ignore specific IDs. Ranged fuzzing logic is integrated as part of the full fuzzing logic, allowing you to specify a range of CAN IDs to fuzz.
