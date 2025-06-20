@@ -1,4 +1,4 @@
-# Devangshu Mazumder - 2685040 - MSc Cyber Security Project
+
 # **A New Frontier in Fuzzing: Real-Time Video Detection for CAN Bus Networks**
 
 This project is a CAN (Controller Area Network) fuzzing tool that integrates video detection to identify vulnerabilities in automotive or industrial systems. The tool uses a GUI built with `Tkinter`, CAN communication via the `python-can` library, and video processing with `OpenCV`.
